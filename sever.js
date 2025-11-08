@@ -2,9 +2,14 @@ const express = require('express');
 const app = express();
 const fs = require(`fs`);
 const path = require(`path`);
-const port = 3000;
 const moment = require('moment');
 const morgan = require('morgan');
+const multer = require('multer');
+
+const port = 3000;
+
+const upload = multer({dest: `uploads/`});
+app.use(`/uploads`, express.static(path.join(__dirname, `uploads`)));
 
 app.use(morgan('tiny')); //combined - ideal for production, dev - tiny + contant-length 
 
@@ -50,6 +55,11 @@ app.get('/api/data', (req, res) => {
     const students = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     res.status(200).json(students);
+})
+
+app.post('/upload', upload.single('file'), (req, res) => {
+  const photoUrl = `/uploads/${req.file.filename}`;
+  res.send(`<h2>Photo that u uploaded</h2> <img src="${photoUrl}" alt = "Uploaded photo">`);
 })
 
 
