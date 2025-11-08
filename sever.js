@@ -9,6 +9,14 @@ const multer = require('multer');
 const port = 3000;
 
 const upload = multer({dest: `uploads/`});
+
+//redirect
+
+app.get('/old-url', (req, res) => {
+    res.redirect('/new-url');
+});
+
+
 app.use(`/uploads`, express.static(path.join(__dirname, `uploads`)));
 
 app.use(morgan('tiny')); //combined - ideal for production, dev - tiny + contant-length 
