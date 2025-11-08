@@ -12,8 +12,8 @@ const upload = multer({dest: `uploads/`});
 
 //redirect
 
-app.get('/old-url', (req, res) => {
-    res.redirect('/new-url');
+app.get('/old', (req, res) => {
+    res.redirect('/');
 });
 
 
@@ -32,10 +32,15 @@ app.use((req, res, next) => {
     const token = req.query.token;
     console.log(`The token is: ${token}`);
 
+    if (req.path === '/favicon.ico'){
+      return next();
+    }
+
     if(!token){
         console.log(`There is no token in the program!!!`);
         return res.status(403).send({message: `forbidden`})
         }
+    
     next();
     })
 
@@ -70,7 +75,10 @@ app.post('/upload', upload.single('file'), (req, res) => {
   res.send(`<h2>Photo that u uploaded</h2> <img src="${photoUrl}" alt = "Uploaded photo">`);
 })
 
-
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke');
+})
 
 
 app.listen(port, () => {
