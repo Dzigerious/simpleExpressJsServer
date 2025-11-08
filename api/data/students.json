@@ -1,0 +1,164 @@
+{
+  "registered_students": [
+    {
+      "id": 1,
+      "username": "artem_coder",
+      "full_name": "Artem Kovalenko",
+      "email": "artem.kovalenko@example.com",
+      "followers": 354,
+      "registered_at": "2024-01-12"
+    },
+    {
+      "id": 2,
+      "username": "vika.designs",
+      "full_name": "Viktoria Shevchenko",
+      "email": "vika.shevchenko@example.com",
+      "followers": 812,
+      "registered_at": "2024-02-03"
+    },
+    {
+      "id": 3,
+      "username": "maks.dev",
+      "full_name": "Maksym Petrenko",
+      "email": "maks.petrenko@example.com",
+      "followers": 679,
+      "registered_at": "2024-03-10"
+    },
+    {
+      "id": 4,
+      "username": "alisa_photography",
+      "full_name": "Alisa Bondar",
+      "email": "alisa.bondar@example.com",
+      "followers": 1450,
+      "registered_at": "2024-03-27"
+    },
+    {
+      "id": 5,
+      "username": "ivan.music",
+      "full_name": "Ivan Horobets",
+      "email": "ivan.horobets@example.com",
+      "followers": 120,
+      "registered_at": "2024-04-05"
+    },
+    {
+      "id": 6,
+      "username": "natalia.codes",
+      "full_name": "Natalia Martynenko",
+      "email": "natalia.martynenko@example.com",
+      "followers": 992,
+      "registered_at": "2024-04-19"
+    },
+    {
+      "id": 7,
+      "username": "oleg_art",
+      "full_name": "Oleh Koval",
+      "email": "oleh.koval@example.com",
+      "followers": 482,
+      "registered_at": "2024-05-01"
+    },
+    {
+      "id": 8,
+      "username": "maryna_travels",
+      "full_name": "Maryna Danylko",
+      "email": "maryna.danylko@example.com",
+      "followers": 1780,
+      "registered_at": "2024-05-11"
+    },
+    {
+      "id": 9,
+      "username": "yaroslav.tech",
+      "full_name": "Yaroslav Rudyk",
+      "email": "yaroslav.rudyk@example.com",
+      "followers": 301,
+      "registered_at": "2024-06-03"
+    },
+    {
+      "id": 10,
+      "username": "anastasiia_makeup",
+      "full_name": "Anastasiia Kravets",
+      "email": "anastasiia.kravets@example.com",
+      "followers": 2675,
+      "registered_at": "2024-06-20"
+    },
+    {
+      "id": 11,
+      "username": "denys_engineer",
+      "full_name": "Denys Oliynyk",
+      "email": "denys.oliynyk@example.com",
+      "followers": 133,
+      "registered_at": "2024-07-04"
+    },
+    {
+      "id": 12,
+      "username": "iryna.books",
+      "full_name": "Iryna Holub",
+      "email": "iryna.holub@example.com",
+      "followers": 534,
+      "registered_at": "2024-07-18"
+    },
+    {
+      "id": 13,
+      "username": "taras.runner",
+      "full_name": "Taras Vovk",
+      "email": "taras.vovk@example.com",
+      "followers": 221,
+      "registered_at": "2024-08-02"
+    },
+    {
+      "id": 14,
+      "username": "olena_artsy",
+      "full_name": "Olena Polishchuk",
+      "email": "olena.polishchuk@example.com",
+      "followers": 880,
+      "registered_at": "2024-08-16"
+    },
+    {
+      "id": 15,
+      "username": "andriy.photostudent",
+      "full_name": "Andriy Mykhailenko",
+      "email": "andriy.mykhailenko@example.com",
+      "followers": 409,
+      "registered_at": "2024-09-01"
+    },
+    {
+      "id": 16,
+      "username": "ksenia_fitness",
+      "full_name": "Ksenia Berezova",
+      "email": "ksenia.berezova@example.com",
+      "followers": 1740,
+      "registered_at": "2024-09-19"
+    },
+    {
+      "id": 17,
+      "username": "serhii_programmer",
+      "full_name": "Serhii Nesterenko",
+      "email": "serhii.nesterenko@example.com",
+      "followers": 654,
+      "registered_at": "2024-10-02"
+    },
+    {
+      "id": 18,
+      "username": "oksana_draws",
+      "full_name": "Oksana Lytvyn",
+      "email": "oksana.lytvyn@example.com",
+      "followers": 978,
+      "registered_at": "2024-10-21"
+    },
+    {
+      "id": 19,
+      "username": "vlad_gamer",
+      "full_name": "Vlad Klymenko",
+      "email": "vlad.klymenko@example.com",
+      "followers": 340,
+      "registered_at": "2024-11-01"
+    },
+    {
+      "id": 20,
+      "username": "sofia_blog",
+      "full_name": "Sofia Didenko",
+      "email": "sofia.didenko@example.com",
+      "followers": 1545,
+      "registered_at": "2024-11-08"
+    }
+  ]
+}

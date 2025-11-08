@@ -1,7 +1,12 @@
 const express = require('express');
 const app = express();
+const fs = require(`fs`);
+const path = require(`path`);
 const port = 3000;
 const moment = require('moment');
+const morgan = require('morgan');
+
+app.use(morgan('tiny')); //combined - ideal for production, dev - tiny + contant-length 
 
 app.use((req, res, next) => {
     console.log(`Used method:  ${req.method}`);
@@ -39,6 +44,13 @@ app.post('/login', (req, res) => {
   const { username } = req.body;
   res.json({ message: `Welcome, ${username}!` })
 });
+
+app.get('/api/data', (req, res) => {
+    const filePath = path.join(__dirname, `api`, `data`, `students.json`);
+    const students = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+    res.status(200).json(students);
+})
 
 
 
